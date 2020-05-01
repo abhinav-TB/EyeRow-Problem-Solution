@@ -28,11 +28,11 @@
           <div class="card-body">
             <h5 class="card-title">Card title</h5>
             <ul class="list-group">
-              <li class="list-group-item list-group-item-success" id ="id"><i class="fa fa-briefcase"style="font-size:20px;"></i>   Company</li>
-              <li class="list-group-item list-group-item-success" id="name"><i class="fa fa-user"style="font-size:20px;"></i>   Role</li>
-              <li class="list-group-item list-group-item-success" id ="date"><i class="fa fa-map-marker"style="font-size:20px;"></i>   Location</li>
-              <li class="list-group-item list-group-item-success" id ="type"><i class="fa fa-clock-o"style="font-size:20px;"></i>   Duration</li>
-              <li class="list-group-item list-group-item-success" id=""><i class="fa fa-inr"style="font-size:20px;"></i>   Cost</li>
+              <li class="list-group-item list-group-item-success" id ="id"><i class="fa fa-briefcase"style="font-size:20px;"></i>   </li>
+              <li class="list-group-item list-group-item-success" id="name"><i class="fa fa-user"style="font-size:20px;"></i> </li>
+              <li class="list-group-item list-group-item-success" id ="date"><i class="fa fa-map-marker"style="font-size:20px;"></i>   </li>
+              <li class="list-group-item list-group-item-success" id ="type"><i class="fa fa-clock-o"style="font-size:20px;"></i>  </li>
+              <li class="list-group-item list-group-item-success" id=""><i class="fa fa-inr"style="font-size:20px;"></i> </li>
             </ul>
             
           </div>
@@ -40,6 +40,10 @@
   </button>
     <div id="map"></div>
     <script>
+        document.getElementById("id").innerHTML = localStorage.getItem("id");
+        document.getElementById("name").innerHTML = localStorage.getItem("name");
+        document.getElementById("date").innerHTML = localStorage.getItem("date");
+        document.getElementById("type").innerHTML = localStorage.getItem("type");
   Latitude= parseFloat(localStorage.getItem("latitude"))
   Longitude= parseFloat(localStorage.getItem("longitude"))
   
