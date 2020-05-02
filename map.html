@@ -16,10 +16,12 @@
       #map {
         height: 400px;  /* The height is 400 pixels */
         width: 100%;  /* The width is the width of the web page */
+        margin-top: 20px;
        }
     </style>
   </head>
   <body>
+    <div class="tableMain">
     <div class="table-title">
       <h3>Data Table</h3>
       </div>
@@ -49,12 +51,12 @@
       </tr>
       </tbody>
       </table>
-
+    </div>
         
 
     <div id="map"></div>
     <script>
-        document.getElementById("id").innerHTML = localStorage.getItem("id");
+       document.title= document.getElementById("id").innerHTML = localStorage.getItem("id");
         document.getElementById("name").innerHTML = localStorage.getItem("name");
         document.getElementById("date").innerHTML = localStorage.getItem("date");
         document.getElementById("type").innerHTML = localStorage.getItem("type");
