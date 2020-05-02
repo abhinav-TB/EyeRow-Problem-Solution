@@ -1,8 +1,7 @@
 $(document).ready(function () {
 
     $("form").submit(function (e) {
-        e.preventDefault();
-        // alert("hi")
+        e.preventDefault()
         var values = {};
         $.each($('form').serializeArray(), function(i, field) {
             values[field.name] = field.value;
