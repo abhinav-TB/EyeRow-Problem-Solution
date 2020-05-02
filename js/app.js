@@ -8,7 +8,7 @@ $(document).ready(function () {
             localStorage.setItem(field.name,field.value);
         });
     
-    location.replace("/map.html")
+    window.location.href="map.html"
         
     });
 
